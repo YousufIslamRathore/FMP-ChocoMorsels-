@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco Morsels | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="top">
+        <section class="container">
+            <div class="navbar">
+                <div class="logo" style="display: flex; flex-direction: column;">
+                    <img src="./images/logo.png" alt="Website Logo" width="130px" />
+                    <span style="display: flex; flex-wrap: nowrap;">
+                        <span style="color: #7A4728; font-weight: bold;">CHOCO </span>
+                        <span style="color: #7A4728; margin-left: 5px;"> MORSELS</span>
+                    </span>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Items</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                        <li><a href="contactUs.html">Contact</a></li>
+                        <li><a href="feedBack.html">Feed Back</a></li>
+                    </ul>
+                </nav>
+                <img src="./images/cart.png" width="30px" height="30px" />
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()" />
+            </div>
+        </section>
+
+
+        <section class="container2">
+            <div class="row">
+                <div class="col-2">
+                    <a href="javascript:void(0)" class="btn animate__animated animate__fadeInLeftBig">Explore Now</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <a href="#top"><i class="fas fa-chevron-circle-up" id="arrowUp"></i></a>
+
+    <div class="heading2">
+        <h1 class="animate__animated animate__fadeInRight">TOP RATING ITEMS</h1>
+    </div>
+
+    <section class="itemsContainer">
+
+        <div class="small-container">
+
+            <div class="row">
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/brow.jpg" />
+                    <h4>Nutella Brownies with Cadbury Topping</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs. 1199</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/browcake.jpg" />
+                    <h4>Mix Topping BrowCake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 1499</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/brow5.jpg" />
+                    <h4>Assorted Box</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 599</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/brow2.jpg" />
+                    <h4>Oreo Brownies</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs. 499</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/cake6.jpg" />
+                    <h4>Nutella BrowCake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 1299</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+
+                <div class="col-4" data-aos="zoom-in-up">
+                    <img src="./images/items/brow3.jpg" />
+                    <h4>Lotus Biscoff Brownies</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 699</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hehe" data-aos="flip-left" data-aos-duration="3000">
+            <div>
+                <img src="./images/box.png" width="60" height="60">
+                <h4>DELIVERY ON TIME</h4>
+                <p>Order should be placed a day before</p>
+            </div>
+            <div>
+                <img src="./images/shield.png" width="60" height="60">
+                <h4>SECURE PAYMENT</h4>
+                <p>On delivery! after your satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Helpful Links</h3>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Items</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="feedBack.html">FeedBack</a></li>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./images/logo.jpg" />
+                        <h1>A Little Bliss In Every Bite</h1>
+
+                    </div>
+                    <div class="footer-col-3">
+                        <h3> Useful Links </h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Contact:</h3>
+                        <ul>
+                            <li>0321-1354845 (whatsapp only)</li>
+                        </ul>
+                        <br>
+                        
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/chocomorsels">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/chocomorsels/">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p class="copyright">Copyright 2021 - Yousuf Islam Rathore</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
